@@ -1,31 +1,44 @@
-# UrlToJD2 - A Firefox extension
-Push an url from the browser or a link (right-click) to the download manager JDownloader 2.
+# URL2JD2 - A Firefox extension
+Push an url from the browser or a link (right-click) to JDownloader2's Linkgrabber.
 
 This addons use the remote control API (externInterface: Flashgot) from JDownloader2.
 
 ## Prerequisites
-Install [JDownloader2](http://beta.jdownloader.org/).
-In "advanced parameters" search "RemoteAPI".
-The value of "Authorized Website" must look like: ["127.0.0.1", "localhost"]
-JD2 is now ready to listen !
+- Install [JDownloader2](http://beta.jdownloader.org/).
+- Go into Settings, Then Into advanced and search "RemoteAPI".
+- Change the value of "Authorized Websites" to match the url/ip of your server must look like: ["address"]  
 
-## Usage
-This extension add two things:
-- A "pageAction" (a clickable icon inside the browser's address bar).
-- An item in the context menu
+![example](https://github.com/pbanj/URL2JD2/assets/17306233/52aa7a31-c954-46c4-aa75-96bc1441fde1)  
+- Uncheck "will listen on localhost only"
 
-With url or link (or link/url in selection), choose to send to the Linkgrabber or to the Download list.
+## Usage:  
+- After install go to the addon and set your server address in the options. Referer should match the server address
 
-## Note
-If you want a more complete addons with JD2, try [the official one:](https://my.jdownloader.org/apps/)
+![Example](https://github.com/pbanj/URL2JD2/assets/17306233/44233b1e-be62-4a78-9646-e279695466b5)
 
-## Code Source
-[UrlToJD2](https://framagit.org/GTeam/urltojd2)
+- Highlight a link if not clickable and right click, or right click on link and then click "Send to JD2"
 
-## Acknowledgments
-- Extension icon: [primofenax](https://www.deviantart.com/primofenax/art/icon-Minimal-JDownloader-Icon-313625363)
-- Context icons from JDownloader2
+## Things added by the extension:  
+- A "pageAction" (A clickable icon in the address bar).  
 
-## Licence
+![image](https://github.com/pbanj/URL2JD2/assets/17306233/c99b0882-fa7e-4c42-827c-279fea795e20)  
+
+- An item in the context menu  
+![menu](https://github.com/pbanj/URL2JD2/assets/17306233/4cfb5c61-768f-4b31-96f3-586491d2f2e7)
+
+
+
+
+## Original source:  
+[UrlToJD2](https://framagit.org/GTeam/urltojd2)  
+
+## Option menu source:  
+https://git.xnopyt.com/xnoe/urltojd2  
+
+
+## Acknowledgments:
+- Icon: [clipartmax](https://www.clipartmax.com/middle/m2H7i8d3K9A0H7i8_this-looks-like-the-earth-jdownloader-icon-svg/)
+
+## Licence:  
 This project is licensed under the Mozilla Public License, version 2.0
 
