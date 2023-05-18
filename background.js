@@ -3,12 +3,11 @@ let JD2_REFERER = window.localStorage.getItem("jd2_referer") ?? 'localhost';
 let JD2_MATCH_URL = window.localStorage.getItem("jd2_match_url") ?? "*://*/flashgot?*";
 
 // menu
-const mnDlId = "JD2Dl";
 const mnGrabberId = "JD2Grabber"
 
 
 function onError(error) {
-    console.log('UrlToJD2 background error: ' + error);
+    console.log('URL2JD2 background error: ' + error);
 }
 
 function onCreated() {
@@ -51,20 +50,11 @@ browser.menus.create({
     title: "Linkgrabbler",
     contexts: ["link", "selection"],
     icons: {
-        "16": "icons/jd2linkgrabber-16.png",
-        "32": "icons/jd2linkgrabber-32.png"
+        "16": "icons/16.png",
+        "32": "icons/32.png"
     }
 }, onCreated);
 
-browser.menus.create({
-    id: mnDlId,
-    title: "send to Download",
-    contexts: ["link", "selection"],
-    icons: {
-        "16": "icons/jd2download-16.png",
-        "32": "icons/jd2download-32.png"
-    }
-}, onCreated);
 
 // Choose from info (object menus.OnClickData)
 // linkUrl over selectionText
@@ -88,9 +78,6 @@ browser.menus.onClicked.addListener((info, tab) => {
             case mnGrabberId:
                 url_for_JD2 = urlConstruct(url, 0);
                 break;
-            case mnDlId:
-                url_for_JD2 = urlConstruct(url, 1);
-                break;
         }
         // console.log(url);
         // console.log(url_for_JD2);
@@ -99,20 +86,14 @@ browser.menus.onClicked.addListener((info, tab) => {
 });
 
 function updateMenuItem(url) {
-    browser.menus.update(mnDlId, {
-        title: 'Download: ' + url
-    });
     browser.menus.update(mnGrabberId, {
-        title: 'Linkgrabber: ' + url
+        title: 'Send To JD2'
     });
     browser.menus.refresh();
 }
 
 function allMenusVisible(visible){
     browser.menus.update(mnGrabberId, {
-        visible: visible
-    });
-    browser.menus.update(mnDlId, {
         visible: visible
     });
 }
