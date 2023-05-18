@@ -1,5 +1,6 @@
 # URL2JD2 - A Firefox extension
-Push an url from the browser or a link (right-click) to JDownloader2's Linkgrabber.
+
+Push a url from the address bar or a link (right-click) to JDownloader2's Linkgrabber.
 
 This addons use the remote control API (externInterface: Flashgot) from JDownloader2.
 
@@ -28,15 +29,9 @@ This addons use the remote control API (externInterface: Flashgot) from JDownloa
 
 
 
-
-## Original source:  
-[UrlToJD2](https://framagit.org/GTeam/urltojd2)  
-
-## Option menu source:  
-https://git.xnopyt.com/xnoe/urltojd2  
-
-
-## Acknowledgments:
+## Acknowledgments:  
+- Original Source [UrlToJD2](https://framagit.org/GTeam/urltojd2)  
+- Xnoe [Option Menu Source](https://git.xnopyt.com/xnoe/urltojd2)  
 - Icon: [clipartmax](https://www.clipartmax.com/middle/m2H7i8d3K9A0H7i8_this-looks-like-the-earth-jdownloader-icon-svg/)
 
 ## Licence:  
