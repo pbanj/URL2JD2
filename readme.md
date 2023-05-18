@@ -2,7 +2,9 @@
 
 Push a url from the address bar or a link (right-click) to JDownloader2's Linkgrabber.
 
-This addons use the remote control API (externInterface: Flashgot) from JDownloader2.
+This addons uses the remote control API (externInterface: Flashgot) from JDownloader2.
+
+Was made mainly for use with [docker-jdownloader-2](https://github.com/jlesage/docker-jdownloader-2)
 
 ## Prerequisites
 - Install [JDownloader2](http://beta.jdownloader.org/).
