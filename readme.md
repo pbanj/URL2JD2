@@ -15,7 +15,7 @@ Was made mainly for use with [docker-jdownloader-2](https://github.com/jlesage/d
 - Uncheck "will listen on localhost only"
 
 ## Usage:  
-- Install the [Add-on](https://addons.mozilla.org/en-US/firefox/addon/url2jd2/) approval is pending so link is dead atm 5/17/2023
+- Install the [Add-on](https://addons.mozilla.org/en-US/firefox/addon/url2jd2/) 
 - After install go to the addon and set your server address in the options. Referer should match the server address
 
 ![Example](https://github.com/pbanj/URL2JD2/assets/17306233/44233b1e-be62-4a78-9646-e279695466b5)
